@@ -62,12 +62,12 @@
 }
 
 .inputWrap:hover .fieldset {
-  border-color: var(--BR_2);
+  border-color: var(--BG_2);
 }
 
 .focused .fieldset,
 .inputWrap:focus-within .fieldset {
-  border-color: var(--BR_2);
+  border-color: var(--BG_2);
   border-width: 1px;
 }
 

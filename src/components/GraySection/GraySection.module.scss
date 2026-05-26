@@ -15,7 +15,8 @@
 
   &.sm {
     padding: 64px 0;
-    width: 930px;
+    width: 100%;
+    align-self: stretch;
     border-radius: 8px;
     background: url("bg-sm.png") lightgray 50% / cover no-repeat;
   }

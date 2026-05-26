@@ -19,6 +19,16 @@ const FUEL_LABELS: Record<string, string> = {
     Hybrid:   "Гибрид",
 };
 
+const BODY_STYLE: Record<string, string> = {
+    SUV: "Внедорожник",
+    Crossover: "Кроссовер",
+    Coupe: "Купе",
+    Hatchback: "Хэтчбек",
+    Convertible: "Кабриолет",
+    Wagon: "Универсал",
+    Sedan: "Седан",
+};
+
 const DRIVETRAIN: Record<string, string> = {
     RWD: "Задний",
     AWD:   "Полный",
@@ -49,13 +59,13 @@ export default async function CarPage({ params }: Props) {
     const fmtMileage = (n: number) => `${n.toLocaleString("ru-RU")} км`;
 
     const specs: { label: string; value: string | null | undefined }[] = [
-        { label: "Состояние",   value: STOCK_LABELS[car.stockType] ?? car.stockType },
-        { label: "Привод",      value: car.drivetrain == null ? "-" : DRIVETRAIN[car.drivetrain] },
-        { label: "Пробег",      value: fmtMileage(car.mileage) },
-        { label: "WIN номер",   value: car.vin },
-        { label: "Год выпуска",         value: String(car.year) },
-        { label: "Цвет кузова",        value: car.color },
-        { label: "Тип авто",       value: car.bodyStyle },
+        { label: "Состояние", value: STOCK_LABELS[car.stockType] ?? car.stockType },
+        { label: "Привод", value: car.drivetrain == null ? "-" : DRIVETRAIN[car.drivetrain] },
+        { label: "Пробег", value: fmtMileage(car.mileage) },
+        { label: "WIN номер", value: car.vin },
+        { label: "Год выпуска", value: String(car.year) },
+        { label: "Цвет кузова", value: car.color },
+        { label: "Тип авто", value: BODY_STYLE[car.bodyStyle]},
         { label: "Тип топлива", value: FUEL_LABELS[car.fuelType] ?? car.fuelType },
         { label: "Марка авто", value: car.make },
     ];
@@ -81,10 +91,10 @@ export default async function CarPage({ params }: Props) {
                                     className={styles.image}
                                     alt={`${car.make} ${car.model}`}
                                     fill
-                                    sizes="930px, 100%"
+                                    sizes="(max-width: 768px) 100vw, 50vw"
                                 />
                             </div>
-                            <GraySection href={"#order"} variant={"sm"} buttonText={"Получить консультацию"} title={`от ${fmtPrice(car.price)}`} />
+                            <GraySection href={"/#order"} variant={"sm"} buttonText={"Получить консультацию"} title={`от ${fmtPrice(car.price)}`} />
                         </div>
 
                         <div className={styles.info}>

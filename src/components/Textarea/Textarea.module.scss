@@ -66,40 +66,18 @@
   overflow-y: auto;
 }
 
-.textarea::placeholder {
-  color: #555;
-}
-
-.help {
-  padding-left: 2px;
-  font-size: 13px;
-}
-
 .textareaWrap:hover .fieldset {
-  border-color: #fff;
+  border-color: var(--BG_2);
 }
 
 .focused .fieldset,
 .textareaWrap:focus-within .fieldset {
-  border-color: #fff;
-  border-width: 2px;
+  border-color: var(--BG_2);
+  border-width: 1px;
 }
 
 .focused .label,
 .textareaWrap:focus-within .label {
-  color: #fff;
+  color: var(--TX_0);
 }
 
-.error .fieldset,
-.error .textareaWrap:hover .fieldset,
-.error .textareaWrap:focus-within .fieldset {
-  border-color: #ff4444;
-}
-
-.error .label {
-  color: #ff4444;
-}
-
-.error .help {
-  color: #ff4444;
-}
