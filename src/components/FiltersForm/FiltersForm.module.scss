@@ -1,0 +1,43 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 20px;
+    width: 320px;
+    flex-shrink: 0;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionCheckbox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sectionTitle {
+    margin-bottom: 24px;
+}
+
+.ranges {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.rangeInputs {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    font-family: var(--font-inter);
+}
+
+.checkboxList {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: var(--font-inter);
+}

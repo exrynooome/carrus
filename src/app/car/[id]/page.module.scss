@@ -1,0 +1,128 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-inter);
+  padding: 0 16px;
+  height: 40px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.left_block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: 723.333px;
+  align-self: stretch;
+  aspect-ratio: 9/7;
+  border-radius: 8px;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price {
+  color: var(--TX_0);
+}
+
+.subtitle {
+  color: var(--TX_1);
+}
+
+.specs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.specRow {
+  display: flex;
+  align-items: center;
+}
+
+.advantage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  color: var(--TX_4);
+}
+
+.specLabel {
+  color: var(--TX_4);
+  width: 170px;
+}
+
+.specValue {
+  color: var(--TX_0);
+  text-align: right;
+}
+
+.vin {
+  color: var(--TX_1);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.externalLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--BLUE_HV);
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background 0.15s;
+
+  &:hover {
+    background: var(--BLUE_AC);
+  }
+}
+
+.notFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 20px;
+  color: var(--TX_1);
+}

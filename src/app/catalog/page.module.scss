@@ -1,0 +1,36 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.text {
+  display: flex;
+  padding: 40px 48px;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 20px;
+  padding-bottom: 32px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: var(--font-inter);
+  padding: 0 16px;
+  height: 40px;
+}

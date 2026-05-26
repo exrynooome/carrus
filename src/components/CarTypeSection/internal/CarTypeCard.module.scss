@@ -1,0 +1,24 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.image {
+  position: relative;
+  aspect-ratio: 500 / 389;
+  width: 100%;
+  user-select: none;
+  border-radius: 8px;
+}
+
+.text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  z-index: 1;
+  top: 64px;
+}

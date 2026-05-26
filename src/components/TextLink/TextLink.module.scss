@@ -1,0 +1,55 @@
+.button {
+  display: inline-flex;
+  transition: ease-in-out 0.15s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.text {
+  text-align: center;
+  font-weight: 500;
+  transition: ease-in 0.15s;
+  color: var(--TX_0);
+
+  &:hover {
+    color: var(--BLUE_HV);
+  }
+
+  &:active {
+    color: var(--BLUE_AC);
+  }
+
+  &.sm {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &.lg {
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  &.gray {
+    color: var(--TX_2);
+
+    &:hover {
+      color: var(--TX_0);
+    }
+
+    &:active {
+      color: var(--TX_3);
+    }
+  }
+
+  &.red {
+    color: var(--RED);
+
+    &:hover {
+      color: var(--RED);
+    }
+
+    &:active {
+      color: var(--RED);
+    }
+  }
+}

@@ -1,0 +1,71 @@
+h1 {
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+}
+
+h2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+}
+
+h4 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-feature-settings: 'liga' off, 'clig' off;
+  text-overflow: ellipsis;
+}
+
+p, a {
+  font-style: normal;
+  font-weight: 400;
+
+  &.text_14 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &.text_16 {
+    font-size: 16px;
+    line-height: 110%;
+  }
+
+  &.text_20 {
+    font-size: 20px;
+    line-height: 110%;
+  }
+
+  &.text_24 {
+    font-size: 24px;
+  }
+
+  &.text_44 {
+    font-size: 44px;
+    line-height: 52px;
+  }
+
+  &.medium {
+    font-weight: 500;
+  }
+
+  &.sbold {
+    font-weight: 600;
+  }
+
+  &.gray {
+    color: var(--TX_2);
+  }
+}
+

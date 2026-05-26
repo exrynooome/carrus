@@ -1,0 +1,81 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputWrap {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  top: -10px;
+  left: 16px;
+  z-index: 1;
+  color: var(--TX_0);
+  pointer-events: none;
+  transition: color 0.15s ease;
+}
+
+.required {
+  color: var(--TX_0);
+}
+
+.fieldset {
+  position: absolute;
+  inset: -10px 0 0 0;
+  margin: 0;
+  padding: 0 12px;
+  border: 1px solid var(--BR_0);
+  border-radius: 8px;
+  pointer-events: none;
+  transition: border-color 0.15s ease, border-width 0.15s ease;
+}
+
+.legend {
+  padding: 0;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 100%;
+  visibility: hidden;
+  white-space: nowrap;
+}
+
+.legend > span {
+  padding: 0 4px;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+  color: var(--TX_0);
+  font-size: 16px;
+  line-height: 20px;
+  padding: 18px 20px;
+  font-family: inherit;
+}
+
+.inputWrap:hover .fieldset {
+  border-color: var(--BR_2);
+}
+
+.focused .fieldset,
+.inputWrap:focus-within .fieldset {
+  border-color: var(--BR_2);
+  border-width: 1px;
+}
+
+.focused .label,
+.inputWrap:focus-within .label {
+  color: var(--TX_0);
+}
+
+.error {
+  color: var(--RED);
+}

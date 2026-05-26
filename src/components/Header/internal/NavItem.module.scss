@@ -1,0 +1,18 @@
+.container {
+  display: inline-flex;
+  height: 52px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  transition: ease-in 0.15s;
+
+  &:hover {
+    color: var(--BLUE_HV);
+  }
+
+  &:active {
+    color: var(--BLUE_AC);
+  }
+}
